@@ -27,6 +27,15 @@ img {
     max-width: 100%;
 }
 
+body.full-page {
+    display:flex;
+    flex-direction: column;
+}
+
+.full-page section {
+    flex: 1;
+}
+
 header {
     /* Museum of ME */
     background: rgb(125, 185, 227);
@@ -37,10 +46,20 @@ header {
     align-items: center;
 }
 
+.lightyellow-bkg {
+    background: rgb(224, 192, 141);
+}
+.yellow-bkg {
+    background: rgb(229, 184, 108);
+}
+
 .date {
     border-left: 2px solid;
     border-right: 2px solid;
     padding: 0 20px;
+}
+.active {
+    text-decoration: underline;
 }
 
 section {
@@ -50,7 +69,6 @@ section {
 h1 {
     font-family: "IBM Plex Mono", monospace;
     font-size: 32px;
-    background: rgb(71, 126, 160);
 }
 
 .slippers {
@@ -122,6 +140,10 @@ footer {
     font-family: "IBM Plex Sans", sans-serif;
     font-size: 16px;
     background: rgb(125, 185, 227);
+}
+
+footer.archive {
+    background: rgb(229, 184, 108);
 }
 
 /* Creates a new rule for .grid-parent when displayed smaller */
